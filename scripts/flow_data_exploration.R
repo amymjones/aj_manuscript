@@ -43,6 +43,10 @@ current_vals <- terra::extract(current_velocity_crop_ag,
 # deal with some cells being NA and needing to take the average of all cells around it.
 
 # get adjacent cells
+e1 <- terra::extract(x = current_velocity_crop_ag, # SpatRaster or SpatVector
+                     y = BHI_points_trans |> vect(), # must be SpatVector of points/lines/polygons
+                     cell = TRUE) # keep the cell number
+
 a1 <- adjacent(x = current_velocity_crop_ag, #SpatRaster
                cells = e1$cell,
                direction = "queen") # vector of cell numbers to get adjacent cells
@@ -90,7 +94,7 @@ ext(BHI_points)
 # e1 <- terra::extract(x = current_velocity_crop_ag, # SpatRaster or SpatVector
 #                     y = BHI_points_trans |> vect(), # must be SpatVector of points/lines/polygons
 #                     cell = TRUE) # keep the cell number
-# 
+
 # a1 <- adjacent(x = current_velocity_crop_ag, #SpatRaster
 #                cells = e1$cell,
 #                direction = "queen") # vector of cell numbers to get adjacent cells
