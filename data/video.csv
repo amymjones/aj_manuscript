@@ -1,0 +1,21 @@
+"Island","method","Site","Date","Time","Latitude","Longitude","Depth_ft","Eaten","Pop_Eaten","Pop_Not_Eaten","Tide_Height","Bait","Total_sec_observed","First_Predator","Sec_to_Approach","Sec_to_predation","PALO","CAMA","Asian_Crab","LIER","Cancer_sp","Unknown_crab","Stripped_bass","Winter_Flounder","Skate","Rock_gunnel","Cunner","Unknown_fish","Lobster","Cormorant","Grass_shrimp","sand","shell_debris","pebble","cobble","boulder","Kelp","Filamentous_Red_Algae","Large_Folios_Algae","Other_Algae","DIVE","DIVE_STCL","MEME","Unknown"
+"Rainsford","BRUV","A","08-24-2022","9:09 AM",42.31001,-70.953966,NA,"Y",4,1,"sub","squid",2963,"CAMA",424,1421,34,17,0,1,1,6,0,0,0,0,5,0,0,0,0,89.3,0,0,0,0,0,0,0,0,0,0,0,10.7
+"Rainsford","BRUV","B","08-24-2022","12:05 PM",42.311195,-70.958449,NA,"N",3,2,"sub","squid",3159,"CAMA",498,NA,5,6,0,15,0,4,4,2,0,0,1,0,0,0,0,0,27.8,0,9.5,0,9,0,1,1.3,0,2.4,0,49
+"Rainsford","BRUV","C","08-24-2022","10: 50 AM",42.312992,-70.955047,NA,NA,4,1,"sub","squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Rainsford","BRUV","D","08-24-2022","10:42 AM",42.314339,-70.952103,NA,"Y",5,0,"sub","squid",4226,"CAMA",204,708,6,13,0,11,0,0,2,3,1,1,18,0,0,0,0,0,0,0,20,0,50,0,0,0,0,0,0,30
+"Rainsford","BRUV","E","08-24-2022","9:16 AM",42.310849,-70.950315,NA,"Y",5,0,"sub","squid",4194,"CAMA",121,402,25,19,0,7,0,3,0,4,0,0,1,0,0,0,0,0,22.8,0,11.5,0,0,22.2,0,11,0,2,0,30.5
+"Rainsford","BRIV","A","2022-08-16",NA,NA,NA,NA,NA,5,1,"mid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"Rainsford","BRIV","B","2022-08-16","11:33 AM",42.311114,-70.957743,NA,"N",8,1,"mid","squid",3120,"Grass_shrimp",60,NA,14,30,2,0,1,11,0,0,0,0,0,0,0,0,3,0,0,68.5,0,0,0,0,0,0,0,0,0,31.5
+"Rainsford","BRIV","C","2022-08-16","11:17 AM",42.311875,-70.95453,NA,"Y",10,0,"mid","squid",4370,"Unknown_crab",124,837,18,24,1,0,0,7,0,0,0,0,0,0,0,0,12,2,9.5,9,11,0,0,0,33,1.5,0,0,1,34
+"Rainsford","BRIV","D","2022-08-16","11:37 AM",42.313396,-70.951435,NA,"N",6,4,"mid","squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Rainsford","BRIV","E","2022-08-16","11:52 AM",42.311626,-70.951101,NA,"Y",10,0,"mid","squid",3589,"Asian_Crab",318,618,4,2,13,0,0,11,0,0,0,0,0,0,0,0,0,0,6,1,24.5,30,0,0,0,0,0,0,0,38.5
+"Lovells","BRUV","A","2022/08/29","9:11 AM",42.330726,-70.933504,12.7,"Y",5,0,"sub","squid",3902,"CAMA",136,739,18,20,0,0,0,8,0,0,0,0,0,0,0,0,0,88.3,0,0,0,0,0,0,0,0,0,0,0,11.7
+"Lovells","BRUV","B","2022/08/29","9:22 AM",42.334162,-70.934536,16,"Y",NA,NA,"sub","squid",3588,"LIER",433,1087,0,5,0,2,1,1,0,0,0,0,24,1,0,0,0,7.5,2.5,0,0,0,39.3,0,0,16.5,0,0,0,34.2
+"Lovells","BRUV","C","2022/08/29","10:46 AM",42.337145,-70.924147,10,NA,3,2,"sub","squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Lovells","BRUV","D","2022/08/29","10:58 AM",42.32536,-70.920455,25,"N",1,4,"sub","squid",4265,"LIER",2107,NA,15,13,0,1,3,3,2,0,0,0,1,0,1,0,0,0,0,78,0,0,0,0,0,8,0,0,0,14
+"Lovells","BRUV","E","2022/08/29","12:22 PM",42.324734,-70.925889,20,"N",3,2,"sub","squid",2505,NA,NA,NA,13,5,0,5,0,3,0,0,0,0,3,0,0,0,0,0,0,0,80.3,0,0,0,0,0,0,0,0,15.7
+"Lovells","BRIV","A","2022-08-30","10:58 AM",42.330579,-70.930809,NA,"Y",10,0,"mid","squid",2838,"Asian_Crab",175,401,4,23,8,0,0,5,8,0,0,0,0,0,0,0,0,0,0,0,61.5,0,0,0,0,0,0,0,0,38.5
+"Lovells","BRIV","B","2022-08-30","11:11 AM",42.332623,-70.932527,NA,"Y",10,0,"mid","squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,24
+"Lovells","BRIV","C","2022-08-30","10:58 AM",42.331872,-70.928551,NA,"Y",10,0,"mid","squid",8414,"CAMA",235,2195,50,22,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,59,11.5,0,0,0,0,0,0,0,0,29
+"Lovells","BRIV","D","2022-08-30","10:43 AM",42.325457,-70.924034,NA,"Y",8,2,"mid","squid",6136,"CAMA",210,2588,8,23,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,25,0,0,0,0,63,3,0,0,0,9
+"Lovells","BRIV","E","2022-08-30","11:02 AM",42.324923,-70.925644,NA,"Y",10,0,"mid","squid",3577,"Asian_Crab",327,1006,9,6,16,0,0,12,0,0,0,0,0,0,0,0,0,0,0,17.5,64,0,0,0,0,0,0,0,0,18.5

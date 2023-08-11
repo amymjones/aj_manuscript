@@ -1,0 +1,11 @@
+"Island","method","Site","Date","Time","Latitude","Longitude","Pop_Eaten","Pop_Not_Eaten","Tide_Height","Bait","Total_sec_observed","First_Predator","Sec_to_Approach","Sec_to_predation","PALO","CAMA","Unknown_crab","LIER","Cancer_sp","Stripped_bass","Flounder","Skate","Rock_gunnel","Cunner","Sand","Shell_Debris","Pebbles","Cobble","Boulder","Kelp","Filamentous_Red_Algae","Large_Folios_Algae","Other Algae","Unknown","DIVE_STCL","Eaten","Asian_Crab","Grass_shrimp","MEME","DIVE"
+"Rainsford","BRUV","A","08-24-2022","9:09 AM",42.31001,-70.953966,4,1,"sub","squid",2963,"CAMA",424,1421,34,17,6,1,1,0,0,0,0,5,89.3,0,0,0,0,0,0,0,0,10.7,0,"Y",NA,NA,NA,NA
+"Rainsford","BRUV","B","08-24-2022","12:05 PM",42.311195,-70.958449,3,2,"sub","squid",3159,"CAMA",498,NA,5,6,4,15,0,4,2,0,0,1,0,27.8,0,9.5,0,9,0,1,1.3,49,2.4,"N",NA,NA,NA,NA
+"Rainsford","BRUV","C","08-24-2022","10: 50 AM",42.312992,-70.955047,4,1,"sub","squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Rainsford","BRUV","D","08-24-2022","10:42 AM",42.314339,-70.952103,5,0,"sub","squid",4226,"CAMA",204,708,6,13,0,11,0,2,3,1,1,18,0,0,0,20,0,50,0,0,0,30,0,"Y",NA,NA,NA,NA
+"Rainsford","BRUV","E","08-24-2022","9:16 AM",42.310849,-70.950315,5,0,"sub","squid",4194,"CAMA",121,402,25,19,3,7,0,0,4,0,0,1,0,22.8,0,11.5,0,0,22.2,0,11,30.5,2,"Y",NA,NA,NA,NA
+"Rainsford","BRIV","A","2022-08-16",NA,NA,NA,5,1,"mid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA,NA,0
+"Rainsford","BRIV","B","2022-08-16","11:33 AM",42.311114,-70.957743,8,1,"mid","squid",3120,"Grass_shrimp",60,NA,14,30,11,NA,1,NA,0,NA,NA,NA,0,0,68.5,0,0,0,0,0,0,31.5,0,"N",2,3,0,0
+"Rainsford","BRIV","C","2022-08-16","11:17 AM",42.311875,-70.95453,10,0,"mid","squid",4370,"Unknown_crab",124,837,18,24,7,NA,0,NA,0,NA,NA,NA,2,9.5,9,11,0,0,0,33,1.5,34,0,"Y",1,12,1,0
+"Rainsford","BRIV","D","2022-08-16","11:37 AM",42.313396,-70.951435,6,4,"mid","squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"N",NA,NA,NA,NA
+"Rainsford","BRIV","E","2022-08-16","11:52 AM",42.311626,-70.951101,10,0,"mid","squid",3589,"Asian_Crab",318,618,4,2,11,NA,0,NA,1,NA,NA,NA,0,6,1,24.5,30,0,0,0,0,38.5,0,"Y",13,0,0,0

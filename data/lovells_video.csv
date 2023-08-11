@@ -1,0 +1,11 @@
+"Island","method","Site","Date","Time","Latitude","Longitude","Pop_Eaten","Pop_Not_Eaten","Depth_ft","Bait","Eaten","Total_sec_observed","First_Predator","Sec_to_Approach","Sec_to_predation","Unknown_crab","Cancer_sp","LIER","CAMA","Lobster","PALO","Cunner","Stripped_bass","Unknown_fish","Flounder","Sand","Shell_Debris","Pebbles","Cobble","Boulder","Kelp","Filamentous_Red_Algae","Large_Folios_Algae","Other Algae","Unknown","Tide_Height","Asian_Crab","Cormorant","Grass_shrimp","MEME"
+"Lovells","BRUV","A","2022/08/29","9:11 AM",42.330726,-70.933504,5,0,12.7,"squid","Y",3902,"CAMA",136,739,8,0,0,20,0,18,0,0,0,1,88.3,0,0,0,0,0,0,0,0,11.7,"sub",NA,NA,NA,NA
+"Lovells","BRUV","B","2022/08/29","9:22 AM",42.334162,-70.934536,NA,NA,16,"squid","Y",3588,"LIER",433,1087,1,1,2,5,0,0,24,0,1,NA,7.5,2.5,0,0,0,39.3,0,0,16.5,34.2,"sub",NA,NA,NA,NA
+"Lovells","BRUV","C","2022/08/29","10:46 AM",42.337145,-70.924147,3,2,10,"squid",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"sub",NA,NA,NA,NA
+"Lovells","BRUV","D","2022/08/29","10:58 AM",42.32536,-70.920455,1,4,25,"squid","N",4265,"LIER",2107,NA,3,3,1,13,1,15,1,2,0,1,0,0,78,0,0,0,0,0,8,14,"sub",NA,NA,NA,NA
+"Lovells","BRUV","E","2022/08/29","12:22 PM",42.324734,-70.925889,3,2,20,"squid","N",2505,NA,NA,NA,3,0,5,5,0,13,3,0,0,0,0,0,0,80.3,0,0,0,0,0,15.7,"sub",NA,NA,NA,NA
+"Lovells","BRIV","A","2022-08-30","10:58 AM",42.330579,-70.930809,10,0,NA,"squid","Y",2838,"Asian_Crab",175,401,5,0,NA,23,NA,4,NA,8,NA,0,0,0,0,61.5,0,0,0,0,0,38.5,"mid",8,0,0,0
+"Lovells","BRIV","B","2022-08-30","11:11 AM",42.332623,-70.932527,10,0,NA,"squid","Y",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,9.5,NA,66.5,0,0,0,0,0,24,"mid",NA,NA,NA,NA
+"Lovells","BRIV","C","2022-08-30","10:58 AM",42.331872,-70.928551,10,0,NA,"squid","Y",8414,"CAMA",235,2195,4,0,NA,22,NA,50,NA,1,NA,0,0,0,59,11.5,0,0,0,0,0,29,"mid",0,0,0,0
+"Lovells","BRIV","D","2022-08-30","10:43 AM",42.325457,-70.924034,8,2,NA,"squid","Y",6136,"CAMA",210,2588,2,0,NA,23,NA,8,NA,0,NA,0,0,0,25,NA,0,0,0,63,3,9,"mid",0,1,0,0
+"Lovells","BRIV","E","2022-08-30","11:02 AM",42.324923,-70.925644,10,0,NA,"squid","Y",3577,"Asian_Crab",327,1006,12,0,NA,6,NA,9,NA,0,NA,1,0,0,17.5,64,0,0,0,0,0,18.5,"mid",16,0,0,0
