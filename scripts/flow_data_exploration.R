@@ -40,6 +40,28 @@ current_vals <- terra::extract(current_velocity_crop_ag,
                 BHI_points_trans |> vect(),
                 ID = FALSE)
 
+# deal with some cells being NA and needing to take the average of all cells around it.
+
+# get adjacent cells
+a1 <- adjacent(x = current_velocity_crop_ag, #SpatRaster
+               cells = e1$cell,
+               direction = "queen") # vector of cell numbers to get adjacent cells
+#
+# get values from adjacent cells and bind into a data frame
+# then turn into a vector of mean values
+mean_queen_cell_vals <- apply(a1, 2,
+                              function(x) extract(current_velocity_crop_ag, x),
+                              simplify = FALSE) |>
+  do.call(cbind, args = _) |>
+  rowMeans(na.rm = TRUE)
+
+# last, bind this with current vals, and replace NAs only with mean values
+# from adjacent cells
+current_vals <- current_vals |>
+  mutate(mean_queen_cell_vals = mean_queen_cell_vals,
+         band1 = ifelse(is.na(band1, mean_queen_cell_vals, band1))) |>
+  select(-mean_queen_cell_vals)
+
 BHI_points <- BHI_points |>
   dplyr::bind_cols(current_vals)
 
@@ -47,34 +69,48 @@ ext(BHI_points)
 
 # extract current values using adjacent cells to deal with NA issues
 # example from https://stackoverflow.com/questions/76330119/how-to-get-a-spatraster-of-indices-of-the-nearest-na-cell-in-r-terra
-
-elv <- rast(system.file("ex/elev.tif", package="terra"))
-riv <- vect(system.file("ex/lux.shp", package="terra"))[12] |> as.lines()
-riv$val <- NA
-elv <- rasterize(riv, elv, "val", update=TRUE)
-
-# option 1 using focal
-felv <- focal(elv, 3, mean, na.policy="only")
-
-# option 2 using extract
-e <- terra::extract(elv, riv, cell=TRUE) # 121 rows
-a <- adjacent(x = elv, cells = e$cell) # 121 rows
-a <- cbind(a, terra::extract(elv, a[,2])) |> na.omit()
-b <- terra::aggregate(x = a[, "elevation", drop=F], 
-                      by = a[,"from", drop=FALSE], 
-                      FUN = mean)
-
-# trying with my data
-e1 <- terra::extract(x = current_velocity_crop_ag, # SpatRaster or SpatVector
-                    y = BHI_points_trans |> vect(), # must be SpatVector of points/lines/polygons
-                    cell = TRUE) # keep the cell number
-a1 <- adjacent(x = current_velocity_crop_ag, #SpatRaster
-               cells = e1$cell) # vector of cell numbers to get adjacent cells
-a2 <- cbind(a1, terra::extract(x = current_velocity_crop_ag, 
-                               y = a1[,2])) # |> na.omit()
-current_vals2 <- aggregate(x = a2[, "band1", drop=F], # SpatVector
-                           by = a2[,"from", drop=FALSE], # character; variable(s) used to group the geometries
-                           FUN = mean)
+# 
+# elv <- rast(system.file("ex/elev.tif", package="terra"))
+# riv <- vect(system.file("ex/lux.shp", package="terra"))[12] |> as.lines()
+# riv$val <- NA
+# elv <- rasterize(riv, elv, "val", update=TRUE)
+# 
+# # option 1 using focal
+# felv <- focal(elv, 3, mean, na.policy="only")
+# 
+# # option 2 using extract
+# e <- terra::extract(elv, riv, cell=TRUE) # 121 rows
+# a <- adjacent(x = elv, cells = e$cell) # 121 rows
+# a <- cbind(a, terra::extract(elv, a[,2])) |> na.omit()
+# b <- terra::aggregate(x = a[, "elevation", drop=F], 
+#                       by = a[,"from", drop=FALSE], 
+#                       FUN = mean)
+# 
+# # trying with my data
+# e1 <- terra::extract(x = current_velocity_crop_ag, # SpatRaster or SpatVector
+#                     y = BHI_points_trans |> vect(), # must be SpatVector of points/lines/polygons
+#                     cell = TRUE) # keep the cell number
+# 
+# a1 <- adjacent(x = current_velocity_crop_ag, #SpatRaster
+#                cells = e1$cell,
+#                direction = "queen") # vector of cell numbers to get adjacent cells
+# # 
+# # a2 <- cbind(a1, terra::extract(x = current_velocity_crop_ag, 
+# #                                y = a1[,2])) # |> na.omit()
+# 
+# mean_queen_cell_vals <- apply(a1, 2,function(x) extract(current_velocity_crop_ag, x),
+#             simplify = FALSE) |>
+#   do.call(cbind, args = _) |>
+#   rowMeans(na.rm = TRUE)
+# 
+# current_vals <- current_vals |>
+#   mutate(mean_queen_cell_vals = mean_queen_cell_vals,
+#          band1 = ifelse(is.na(band1, mean_queen_cell_vals, band1))) |>
+#   select(-mean_queen_cell_vals)
+# 
+# # current_vals2 <- aggregate(x = a2[, "band1", drop=FALSE], # SpatVector
+# #                            by = a2[,"from", drop=FALSE], # character; variable(s) used to group the geometries
+# #                            FUN = mean)
 
 # trying to zoom in on the areas of interest
 library(leaflet)
